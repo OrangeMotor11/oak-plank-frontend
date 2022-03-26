@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .page-title {
+        @apply text-6xl text-secondary text-center w-2/5 mt-10
+    }
+
+    .nav-bar {
+        @apply flex fixed top-2 right-2 m-0 h-12 rounded-md bg-baseWhite;
+    }
+
+    .nav-item {
+        @apply flex flex-initial items-center mx-6 text-secondary font-bold text-lg hover:text-secondaryBrighter;
+    }
+
+    .label {
+        @apply text-base text-secondaryBrighter
+    }
+
+    .input-field {
+        @apply border-2 border-accentInfo focus:ring focus:ring-accentInfo focus:outline-none focus:bg-accentInfoBrighter mb-4 text-center w-2/4
+    }
+
+    .info-btn {
+        @apply w-14 h-8 bg-accentInfo text-baseWhite hover:bg-accentInfoBrighter shadow-lg text-sm text-center font-medium;
+    }
+
+    .success-btn {
+        @apply w-14 h-8 bg-accentSuccess text-baseWhite hover:bg-accentSuccessBrighter shadow-lg text-sm text-center font-medium;
+    }
+
+    .disabled-btn {
+        @apply w-14 h-8 bg-baseBlackHalfOpacity text-baseWhite shadow-lg text-sm text-center font-medium;
+    }
+
+    .warning-btn {
+        @apply w-14 h-8 bg-accentWarning text-baseWhite hover:bg-accentWarningBrighter shadow-lg text-sm text-center font-medium;
+    }
+
+    .danger-btn {
+        @apply w-14 h-8 bg-accentDanger text-baseWhite hover:bg-accentDangerBrighter shadow-lg text-sm text-center font-medium;
+    }
+
+    .register-form {
+        @apply border-4 border-primary rounded-md shadow-lg sm:mx-10 sm:my-20 lg:mx-20 lg:my-20
+    }
+
+    .form {
+        @apply flex flex-col justify-center items-center 
+    }
+
+    .menu-grid {
+        @apply grid grid-cols-3 w-11/12 items-center justify-center my-10 px-5  gap-10
+    }
+
+    .menu-item {
+        @apply grid grid-rows-3 border-4 border-primary w-full place-items-stretch rounded-md shadow-lg
+    }
+
+    .dish-img {
+        @apply row-start-1 row-end-3
+    }
+
+    .dish-description {
+        @apply row-start-3 bg-primaryBrighter
+    }
+
+    .previous-order {
+        @apply px-4 ml-40 my-10 w-3/4;
+    }
+
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #FBF8F4;
+}
+
+::selection {
+  color: #F28744;
+  background: #532F17;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #FBF8F4;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #F28744;
+    border-radius: 6px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #f9c5a4;
+  }
